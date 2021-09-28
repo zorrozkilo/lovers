@@ -27,6 +27,9 @@ a {
     display: flex;
     flex-direction: column;
 }
+.hero.monte{
+    background-image: url(montes.jpg);
+}
 
 .rojo {
     /*background-blend-mode: soft-light;*/
@@ -82,6 +85,10 @@ header img {
     bottom: 0;
     max-width: 380px;
     right: calc(50% - 200px);
+}
+.personajes.monte{
+    max-width: 520px;
+    right: calc(50% - 300px);
 }
 
 .formulario {
@@ -142,10 +149,13 @@ header img {
     }
     .hero h1 {
         margin-top: 60px;
-        font-size: 45px;
+        font-size: 35px;
         line-height: 0.9;
     }
-    .personajes {
+    .hero h1 span{
+        font-size: 40px;
+    }
+    .personajes, .personajes.monte {
         position: static;
         max-width: 250px;
     }

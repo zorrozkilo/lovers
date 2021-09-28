@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="hero monte">
+        <header>
+            <img src="logo-bilbao-bizkaia.svg" alt="logo Bilbao Bizkaia be basque">
+        </header>
+        <div class="contenedor">
+            <div class="columna">
+                <h1>¿Eres tan BizkaiaLover</br>como <span>Asier Etxeandia</span></br>y <span>Melani Olivares</span> ?</h1>
+            </div>
+            <div class="formulario">
+                <h2>Participa y gana un viaje para 2 personas a bilbao Bizkaia</h2>
+                <form method="POST" action="?" class="formularioInspiracion col-md-12" id="frmParticipar" _lpchecked="1">
+                    <input type="email" placeholder="Tu email" name="email" id="email" class="inputEmailInspiracion form-control" onchange="comprobarCampos();">
+                    <input placeholder="Nombre" maxlength="" name="nombre" id="nombre" class="inputEmailInspiracion form-control">
+                    <input placeholder="Apellidos" maxlength="" name="apellidos" id="apellidos" class="inputEmailInspiracion form-control">
+                    <div>
+                        <input id="checkPrivacidad" value="ok" class="form-check-input col-xs-1 col-sm-1 col-md-1" type="checkbox" onchange="comprobarCampos();">
+                        <label class="privacidad aceptacion">He leido y acepto la <a href="/es/touristorfriend_win_privacy" class="color-azul">Politica de privacidad</a></label>
+                    </div>
+                    <div>
+                        <input id="checkNoticias" value="ok" class="form-check-input col-xs-1 col-sm-1 col-md-1" type="checkbox" onchange="comprobarCampos();">
+                        <label class="suscripcion aceptacion">Quiero recibir noticias via email</label>
+                    </div>
+                    <a class="color-rojo" id="enlaceBases" target="_blank" title="Acceso al documento, con formato PDF, BASES+DE+PARTICIPACIO%CC%81N+TOURIST+OR+FRIEND_BASE_ESPA%C3%91A.pdf que se abrirá en una nueva ventana de su navegador." href="/documents/1369190/2286919/BASES+DE+PARTICIPACIO%CC%81N+TOURIST+OR+FRIEND_BASE_ESPA%C3%91A.pdf">
+                        Bases del concurso
+                    </a>
+                    <div id="captcha" class="g-recaptcha">
+                        <div style="width: 304px; height: 78px;">
+                            <div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lccj3QUAAAAACThnASoBySHyzOv4S7qP2KQHC8D&amp;co=aHR0cHM6Ly93d3cudmlzaXRiaXNjYXkuZXVzOjQ0Mw..&amp;hl=es&amp;v=tftmXwdbgCvrXiHxr5HGbIaL&amp;theme=dark&amp;size=normal&amp;cb=ct8cz23byj2g"
+                                    width="304" height="78" role="presentation" name="a-yi7enm9uulms" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div>
+                            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                        </div><iframe style="display: none;"></iframe></div>
+
+                    <input value="Participar" id="submit" type="submit">
+                </form>
+                <!--<p >Responsable: Diputación Foral de Bizkaia y Bilbao Ekintza EPEL <br>Finalidad: Envío por email de noticias y ofertas <br>Legitimación: Tu consentimiento expreso <br>Destinatario: Lista de suscriptores alojada en Diputación Foral de Bizkaia y Bilbao Ekinza EPEL. <br>Derechos: Acceso, rectificación, supresión, anonimato, portabilidad y olvido de sus datos</p>-->
+            </div>
+            <img class="personajes monte" src="asier-melanie-monte.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
