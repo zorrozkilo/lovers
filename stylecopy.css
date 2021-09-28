@@ -1,0 +1,113 @@
+@font-face {
+    font-family: kage;
+    src: url(KAGE-Freebies-Black.otf);
+  }
+a{
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:white;
+}
+.hero{
+    background-image: url(bilbao.jpg);
+    background-color: rgba(0, 0, 0, 0.60);
+    background-blend-mode: multiply;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background: transparent;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 10vh;
+}
+header img{
+    width: 120px;
+}
+.contenedor{
+    height: 90vh;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero h1{
+    font-family: kage;
+    font-size: 55px;
+    line-height: 1;;
+
+}
+.columna{
+    width:50%;
+}
+
+.formulario{
+    font-family: 'Montserrat', sans-serif;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #f6001e;
+    padding: 30px;
+}
+.formulario h2{
+    font-size: 20px;
+}
+.formulario input:not([type='checkbox']){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border:1px solid white;
+
+    border-radius: 4px;
+}
+::placeholder{
+    color:white;
+}
+.formulario input, #captcha{
+    margin: 8px 0; 
+}
+.formulario a, .aceptacion{
+    font-size: 12px;
+}
+
+.formulario input[type='submit']{
+    background: #c3c3c3;
+    border: none;
+    border-radius: 50px;
+    color:black
+}
+@media only screen and (max-width: 1080px){
+    .contenedor{
+        flex-direction: column;
+        height: none;
+        padding: 50px 20px;
+    }
+    .hero h1{
+        font-size: 45px;
+        line-height: 0.9;
+
+    }
+    .gotzon{
+        position: static;
+        max-width: 250px;
+    }
+    .formulario{
+        order: 3;
+        margin-top: -4px;
+    }
+}

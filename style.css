@@ -1,0 +1,157 @@
+@font-face {
+    font-family: kage;
+    src: url(KAGE-Freebies-Black.otf);
+}
+
+a {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background-image: url(bilbao.jpg);
+    background-color: #000000af;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rojo {
+    /*background-blend-mode: soft-light;*/
+    background-color: #f6001e;
+}
+
+header {
+    background: transparent;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+}
+
+header img {
+    width: 110px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columna {
+    max-width: 4000px;
+}
+
+.columna h1 {
+    font-family: kage;
+    font-size: 50px;
+    line-height: 01;
+    margin-bottom: 20px;
+}
+.columna h1 span{
+    font-size: 60px;
+}
+
+.columna p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.personajes {
+    position: absolute;
+    bottom: 0;
+    max-width: 380px;
+    right: calc(50% - 200px);
+}
+
+.formulario {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #f6001e;
+    padding: 30px;
+}
+
+.formulario h2 {
+    font-size: 20px;
+}
+
+.formulario input:not([type='checkbox']) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.formulario input,
+#captcha {
+    margin: 8px 0;
+}
+
+.formulario a,
+.aceptacion {
+    font-size: 12px;
+}
+
+.formulario input[type='submit'] {
+    background: #c3c3c3;
+    border: none;
+    border-radius: 50px;
+    color: black
+}
+
+@media only screen and (max-width: 1080px) {
+    header{
+        padding: 20px;
+    }
+    .hero{
+        height: auto;
+    }
+    .contenedor {
+        height: auto;
+        flex-direction: column;
+        height: none;
+        padding: 50px 20px;
+    }
+    .hero h1 {
+        margin-top: 60px;
+        font-size: 45px;
+        line-height: 0.9;
+    }
+    .personajes {
+        position: static;
+        max-width: 250px;
+    }
+    .formulario {
+        order: 3;
+        margin-top: -4px;
+        margin-bottom: 50px;
+    }
+}
